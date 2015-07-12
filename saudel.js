@@ -24,8 +24,15 @@
   app.engine('handlebars', handlebars.engine);
   app.set('view engine', 'handlebars');
 
+  //routes
   app.get('/', function(req, res){
     res.render('home');
+  });
+
+  //404 error page handler
+  app.use(function(err, req, res, next){
+    res.status(404);
+    res.render('404');
   });
 
   http.createServer(app).listen(app.get('port'),function(){
