@@ -10,10 +10,10 @@ module.exports = function(grunt){
   grunt.initConfig({
     jshint:{
       app:['saudel.js'],
-      qa:['Grunfile.js']
+      qa:['Gruntfile.js']
     },
   });
 
   //register tasks
   grunt.registerTask('default',['jshint']);
-}
+};
