@@ -12,7 +12,7 @@
 
   //set up handlebars view engine
   var handlebars = require('express3-handlebars').create({
-    default: 'main',
+    defaultLayout: 'main',
     hepers: {
       section: function(name, options){
           if(!this._sections) this._sections = {};
