@@ -8,7 +8,7 @@
   app.set('port', process.env.PORT || 3000);
 
   //public resourcer
-  app.use(express.static(__dirname + '/pulic'));
+  app.use(express.static(__dirname + '/public'));
 
   //set up handlebars view engine
   var handlebars = require('express3-handlebars').create({
